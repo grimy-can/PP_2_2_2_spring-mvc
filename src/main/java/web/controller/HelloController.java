@@ -14,11 +14,12 @@ public class HelloController {
 	@GetMapping(value = "/")
 	public String printWelcome(ModelMap model) {
 		List<String> messages = new ArrayList<>();
-		messages.add("Hello!");
-		messages.add("I'm Spring MVC application");
-		messages.add("5.2.0 version by sep'19 ");
+		messages.add("1. Создайте еще один контроллер, замаппленный на /cars.");
+		messages.add("2. Должен быть класс User с произвольными полями (id, name и т.п.).");
+		messages.add("3. В приложении должна быть страница, на которую выводятся все юзеры с возможностью добавлять, удалять и изменять юзера.");
+		messages.add("4. Конфигурация Spring через JavaConfig и аннотации, по аналогии с предыдущими проектами. Без использования xml. Без Spring Boot.");
+		messages.add("5. Внесите изменения в конфигурацию для работы с базой данных. Вместо SessionFactory должен использоваться EntityManager.");
 		model.addAttribute("messages", messages);
 		return "index";
 	}
-	
 }
