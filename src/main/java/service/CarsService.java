@@ -4,9 +4,13 @@ import dao.CarsDao;
 import models.Car;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
-public class CarsService implements CarsDao {
 
+public class CarsService implements Service {
+
+
+    private final CarsDao carsDao = new CarsDao();
     private static final List<Car> cars;
 
     static {
@@ -25,8 +29,14 @@ public class CarsService implements CarsDao {
 
     }
 
+
     @Override
-    public List<Car> getCars() {
-        return cars;
+    public List<Car> getCars(String amount) {
+
+        int count = cars.size();
+        if (amount != null) {
+            count = Integer.parseInt(amount);
+        }
+        return cars.stream().limit(count).collect(Collectors.toList());
     }
 }
