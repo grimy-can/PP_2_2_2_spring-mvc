@@ -21,3 +21,9 @@ R
 "src/main/java/dao/CarsDaoImpl.java,2\c\2cdb8ffd32d2c06178602f885c9d8c720bfeaea1
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+w
+G.idea/sonarlint/issuestore/4/1/41e67f22d1a033c14d00c6993300eaa36b45bbc1,e\8\e892de6db56e028bfa4a35090b1887de7d1d1248
